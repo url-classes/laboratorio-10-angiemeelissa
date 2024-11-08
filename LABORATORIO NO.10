@@ -12,11 +12,6 @@ export class NodeRBT {
         if (isLeaf)
             this.color = "BLACK";
     }
-    
-    /*
-    public setData(newdata: NodeRBT): void {
-      this.data = newdata;
-    }*/
 
     public getData(): number {
         return this.data;
@@ -194,6 +189,8 @@ export class RBTree {
         this.fixInsert(newNode);
     }
     
-    //BUSCAR NUMERO EN ESPECIFICO
-    public
+    public InOrden(): void {
+      this.printNode (this.root);
+    }
+  
 }
